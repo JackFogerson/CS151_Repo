@@ -18,13 +18,13 @@ public class Encoding {
 		if(m>0){
 			recursions=morseCodes(m-1,n);
 			for(String dot: recursions){
-                		result.add("." + dot);
+                		result.add(dot + ".");
 			}
 		}
 		if(n>0){
 			recursions=morseCodes(m,n-1);
 			for(String dash: recursions){
-                		result.add("-" + dash);
+                		result.add(dash + "-");
 			}
 		}		
 		return result;
