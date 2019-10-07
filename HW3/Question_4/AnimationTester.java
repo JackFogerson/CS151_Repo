@@ -1,6 +1,4 @@
 import java.awt.*;
-import java.awt.event.*;
-
 import javax.swing.*;
 
 /**
@@ -23,11 +21,16 @@ public class AnimationTester
 
       final ShapeIcon icon = new ShapeIcon(shape,
             ICON_WIDTH, ICON_HEIGHT);
-
-      //inButton.addActionListener(event -> icon.rePaint());
       
       final JLabel label = new JLabel(icon);
       frame.setLayout(new FlowLayout());
+
+      inButton.addActionListener(event -> shape.zoomIn());
+      inButton.addActionListener(event -> label.repaint());
+      outButton.addActionListener(event -> shape.zoomOut());
+      outButton.addActionListener(event -> label.repaint());
+      
+
       frame.add(inButton);
       frame.add(outButton);
       frame.add(label);
