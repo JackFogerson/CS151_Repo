@@ -1,6 +1,5 @@
 import java.awt.*;
 import java.awt.geom.*;
-import java.util.*;
 
 /**
    A car that can be moved around.
@@ -54,6 +53,24 @@ public class CarShape implements MoveableShape
       g2.draw(body);
       g2.draw(frontTire);
       g2.draw(rearTire);
+      g2.draw(frontWindshield);
+      g2.draw(roofTop);
+      g2.draw(rearWindshield);
+   }
+
+   public void zoomIn() {
+	   this.width += 5;
+   }
+   
+   public void zoomOut() {
+	   this.width -= 5;
+   }
+   
+   private int x;
+   private int y;
+   private int width;
+}
+
       g2.draw(frontWindshield);
       g2.draw(roofTop);
       g2.draw(rearWindshield);
