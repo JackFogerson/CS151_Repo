@@ -70,13 +70,3 @@ public class CarShape implements MoveableShape
    private int y;
    private int width;
 }
-
-      g2.draw(frontWindshield);
-      g2.draw(roofTop);
-      g2.draw(rearWindshield);
-   }
-   
-   private int x;
-   private int y;
-   private int width;
-}
