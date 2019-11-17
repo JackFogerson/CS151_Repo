@@ -32,3 +32,5 @@ public class hw4pt1 {
 	}
 	
 }
+
+// The program can become corrupted when withdrawls outnumber deposits and the account gets a negative balance
