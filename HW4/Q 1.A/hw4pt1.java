@@ -33,4 +33,9 @@ public class hw4pt1 {
 	
 }
 
-// The program can become corrupted when withdrawls outnumber deposits and the account gets a negative balance
+// The program can become corrupted when one thread gets interupted by the other thread before it can finish.
+// Example:
+// Inserting $25.0 Balance: $75.0
+// Removing $25.0 Balance: $50.0
+// Removing $25.0 Balance: $75.0
+// Inserting $25.0 Balance: $100.0
